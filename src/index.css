@@ -17,6 +17,10 @@ body {
   margin: 50px auto;
 }
 
+header {
+  position: relative;
+}
+
 header .header {
   position: relative;
 }
@@ -80,6 +84,64 @@ header .presentation::before {
   font-size: 20px;
   font-weight: 300;
   color: #fff;
+}
+
+header .shopping-cart-button {
+  float: right;
+  margin-left: 40px;
+  cursor: pointer;
+  transition: color 500ms ease;
+}
+
+header .shopping-cart-button:hover,
+header .shopping-cart-button:active {
+  color: #adadad;
+}
+
+header .shop-cart {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #fafafa;
+  width: 450px;
+  z-index: 1000;
+  box-shadow: 4px 5px 15px -7px #606060;
+  padding: 10px;
+}
+
+header .shop-cart .cart-title {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #797979;
+}
+
+header .shop-cart .item {
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+header .shop-cart .item img {
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+
+header .shop-cart .item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+header .shop-cart .item b {
+  color: #797979;
+  font-weight: 600;
+}
+
+header .shop-cart .item .delete-icon {
+  color: #222;
+  float: right;
+  position: relative;
+  top: -10px;
+  cursor: pointer;
 }
 
 main {
